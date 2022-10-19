@@ -10,17 +10,17 @@
   .main_content_container h1 {
     font-size: 70px;
     color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif,
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   
   .main_content_wrapper h2 {
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif,
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
 
   .main_content_wrapper h3 {
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif,
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
 
   body {
@@ -30,4 +30,3 @@
     height: 100%;
     overflow: hidden;
   }
-  
