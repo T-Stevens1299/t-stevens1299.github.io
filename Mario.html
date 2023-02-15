@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="HomePage.html" class="nav__link">Back to Home Page</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+    <section class="work" id="work3">
+      <div class="row">
+		<h2>Mario Bros. Using SDL</h2>
+		</div>
+	</section>
+
+    <section class="work" id="work">
+      <div class="row">
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+			  <h5>Overview</h5>
+              <p>
+              As part of my introduction to C++ I was tasked to recreate the original Mario Bros game from 1983 without a game engine and instead utilising SDL Libraries.</p>
+              <br>
+              <p>
+              This was definitely a tough task as I hadn't programmed a game out of an engine before.
+              </p>
+			  <br>
+              <p>
+              Overall it turned out fairly decently considering I only had 6 weeks to do it.
+              </p>
+			  <br>
+			  <div class="work__links">
+				<a href="https://github.com/T-Stevens1299/GEC-sem-2" target="_blank" class="link__text">
+					Download the Game on my Github <span>&rarr;</span>
+				</a>
+			  </div>
+			  <br>			  
+			
+
+            </div>
+            <div class="slideshowWrapper">
+              <div class="slideshowContainer">
+				  
+				  <div class="mySlides fade">
+                      <img src="./images/Mario1.PNG" style="width:100%">
+                  </div>
+				  
+				  <div class="mySlides fade">
+                      <img src="./images/Mario2.PNG" style="width:100%">
+                  </div>
+				  
+				  <div class="mySlides fade">
+                      <img src="./images/Mario3.PNG" style="width:100%">
+                  </div>
+  
+                  
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                  </div>
+                  <br>
+                  <br> <br>
+                  <div style="text-align:center">
+                  </div>
+              </div>
+          </div>
+          </div>
+		  
+		<div class="work__box">
+		  <div class="work__text2">
+			<h5>Game Mechanics</h5>
+              <p>
+              Character Scripts:</p>
+			  <p>The main part of this game was the character class, as this is the parent class to Mario, Luigi, Koopas and even the coin class.</p>
+			  <p>As a result it was one of the largest scripts in the game.</p>		
+			  	<details>
+					<summary>
+					<h1>Code Snippets:</h1>
+					</summary>
+					<details>
+						<summary>
+						<h1>Header File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/ChH1.PNG" style="width:100%">	
+						<img src="./images/CodeExamples/Mario/ChH2.PNG" style="width:100%">	
+					</details>
+					<details>
+						<summary>
+						<h1>Source File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/ChSource1.PNG" style="width:100%">	
+						<img src="./images/CodeExamples/Mario/ChSource2.PNG" style="width:100%">	
+						<img src="./images/CodeExamples/Mario/ChSource3.PNG" style="width:100%">	
+					</details>
+				</details>
+				
+			  <br>
+			  <p>Mario Character:</p>
+			  <p>The Mario character was a child of the main character class, however this required input functions to be added in order to get functionality, as well as setting the movement speed and death variables.</p>
+			  <P>The Luigi class is the exact same as the Mario class, however it just uses different input controls.</p>
+				<details>
+					<summary>
+					<h1>Code Snippets:</h1>
+					</summary>
+					<details>
+						<summary>
+						<h1>Header File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/MarioH.PNG" style="width:100%">	
+					</details>
+					<details>
+						<summary>
+						<h1>Source File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/MarioS1.PNG" style="width:100%">	
+						<img src="./images/CodeExamples/Mario/MarioS2.PNG" style="width:100%">	
+					</details>
+				</details>
+			  
+			  <br>
+			  <p>Koopa Character:</p>
+			  <p>Despite being a child of the main character class, the Koopa class was vastly different from Mario as it had to have a flip function which would change its sprite when the POW block was hit.</p>
+			  <p>Also it required an autonomous movement script with the ability to turn and walk the other way when it hit the screen edge.</p>
+			  <details>
+					<summary>
+					<h1>Code Snippets:</h1>
+					</summary>
+					<details>
+						<summary>
+						<h1>Header File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/KoopaH.PNG" style="width:100%">	
+					</details>
+					<details>
+						<summary>
+						<h1>Source File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/KoopaSource1.PNG" style="width:100%">	
+						<img src="./images/CodeExamples/Mario/KoopaSource2.PNG" style="width:100%">	
+					</details>
+				</details>
+			  
+			  
+			  <br>	
+			  <p>POW Block:</p>
+			  <p>The POW block was another crucial mechanic as when hit, it allowed the players to damage the enemies. Also it had to have the sprite re-rendered every time it was hit. This required multiple checks within the render function.</p>
+			  	<details>
+					<summary>
+					<h1>Code Snippets:</h1>
+					</summary>
+					<details>
+						<summary>
+						<h1>Header File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/PBH.PNG" style="width:100%">	
+					</details>
+					<details>
+						<summary>
+						<h1>Source File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/PBSource.PNG" style="width:100%">	
+					</details>
+				</details>
+				
+			  <br>
+			  <p>Coin:</p>
+			  <p>The last major mechanic was the coins to collect within the level. These were also a child of the character class so it could utilise the preset collisions there.</p>
+			  <p>That way when hit by Mario or Luigi they would destroy themselves. Also within the render functions and update functions is the functionality to have the coin spin around</P>
+			  	<details>
+					<summary>
+					<h1>Code Snippets:</h1>
+					</summary>
+					<details>
+						<summary>
+						<h1>Header File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/CoinH.PNG" style="width:100%">	
+					</details>
+					<details>
+						<summary>
+						<h1>Source File</h1>
+						</summary>
+						<img src="./images/CodeExamples/Mario/CoinSource.PNG" style="width:100%">	
+					</details>
+				</details>
+				
+            </div>
+		</div>
+		
+       </div>
+     </div>
+	  
+    </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/gurvinder-atwal-a4920a23b/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+		  <a href="https://github.com/T-Stevens1299">
+            <img src="./images/Github.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+      <p>
+        &copy Thomas Stevens 2022, website written and designed by Thomas Stevens</a>
+      </p>
+      
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+            slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+<script>
+    let slideIndex2 = 1;
+    showSlides2(slideIndex2);
+
+    function plusSlides2(n) {
+        showSlides2(slideIndex2 += n);
+    }
+
+    function currentSlide2(n) {
+        showSlides2(slideIndex2 = n);
+    }
+
+    function showSlides2(n) {
+        let i;
+        let slides = document.getElementsByClassName("Slides2");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex2 = 1}    
+            if (n < 1) {slideIndex2 = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+            slides[slideIndex2-1].style.display = "block";  
+        dots[slideIndex2-1].className += " active";
+    }
+</script>
+</body>
+
+</html>

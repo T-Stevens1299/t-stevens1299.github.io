@@ -30,7 +30,7 @@
     <!-- ***** Work ***** -->
     <section class="work" id="work3">
       <div class="row">
-		<h2>Top Down Shooter</h2>
+		<h2>Prison Break</h2>
 		</div>
 	</section>
 
@@ -44,13 +44,14 @@
             <div class="work__text">
 			  <h5>Overview</h5>
               <p>
-              This 2D Top down shooter style game was was another prototype that I created in a 6 week timeframe for my university course.</p>
+              Prison Break is a 3D platformer game that utilises possession mechanics.</p>
               <br>
               <p>
-              This was heavily inspired by the game Terraria as it featured similar weapons and enemies.
+			  The aim of the game is to escape a prison by defeating prison guards and possessing drones and cars to solve puzzles.
               </p>
-              <p>
-              It follows a dungeon crawler format as you progress through levels killing different bosses/mini-bosses at the end of each one.
+			  <br>
+			  <p>
+              The main focus of this project for me however was learning how to import animations into unreal engine and utilise them in scripts.
               </p>
 			  <br>
 			  <br>			  
@@ -61,15 +62,19 @@
               <div class="slideshowContainer">
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TopDownShooter.PNG" width="600" height="315">
+                      <img src="./images/3DPrototype.PNG" width="600" height="315">
                   </div>
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TDS1.png" style="width:100%">
+                      <img src="./images/3DPrototype2.PNG" width="600" height="315">
                   </div>
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TDS2.png" style="width:100%">
+                      <img src="./images/3DPrototype3.PNG" width="600" height="315">
+                  </div>
+				  
+				  <div class="mySlides fade">
+                      <img src="./images/3DPrototype4.PNG" width="600" height="315">
                   </div>
   
                   
@@ -89,59 +94,60 @@
 		  <div class="work__text2">
 			<h5>Game Mechanics</h5>
               <p>
-              XP Progression system:</p>
-			  <p>The main mechanic of this game was the XP progressions system. Upon killing enemies, they would drop a certain number of experience.</p>
-			  <p>When the player levelled up, they would unlock a new weapon.</p>
+              Possessable Drone:</p>
+			  <p>One of the main mechanics of the game is the drone that you can possess. This is controllable from terminals around the map and can move about, activate pressure plates and shoot enemies.</p>
 			  <details>
-					<summary>
-					<h1>Code Snippets</h1>
-					</summary>
-					<img src="./images/CodeExamples/TDS/XP1.PNG" style="width:100%">
-					<p>Here is the script to check what weapon to give the player when they levelled up and also replace the old weapon they currently had. In order to determine the weapon, it checks through an array with every weapon type in it.</p>
-					<details>
-						<summary>
-							<h1>Demonstration Video</h1>
-						</summary>
-							<iframe width="600" height="315"
-								src="https://www.youtube.com/embed/uEbyPFvOJD4">
-							</iframe>
-					</details>
-				</details>
-			  
-			  <br>
-			  <p>Checkpoints:</p>
-			  <p>As this game was quite long in duration. If the player died, rather than go back to the very beginning; I added a checkpoint system.</p>
-			  <details>
-					<summary>
-					<h1>Code Snippets</h1>
-					</summary>
-					<img src="./images/CodeExamples/TDS/Check1.PNG" style="width:100%">
-					<p>This is the code for a checkpoint. If the player runs over it, it changes the value in the game manager script.</p>
-				</details>
-			  
-			  <br>	
-			  <p>Defensive Weapon Types:</p>
-			  <p>Due to the level progression system, there were many weapon types. One of the classes were the defensive weapons which aided the player more than dealing damage.</p>
-			  	<details>
 					<summary>
 					<h1>Mechanics Demonstration</h1>
 					</summary>
-					<details>
-						<summary>
-							<h1>Stun Weapon</h1>
-						</summary>
-							<iframe width="600" height="315"
-								src="https://www.youtube.com/embed/c4vgA6CoMnM">
-							</iframe>
-					</details>
-					<details>
-						<summary>
-							<h1>Lifesteal Weapon</h1>
-						</summary>
-							<iframe width="600" height="315"
-								src="https://www.youtube.com/embed/OHISbiUasz8">
-							</iframe>
-					</details>
+						<iframe width="600" height="315"
+							src="https://www.youtube.com/embed/FYZnGdUl6gU">
+						</iframe>
+						<p>This video demonstrates the drone that can be possessed, and the fact that with a button press you can exit the control of the drone anywhere and go back to using the main player.</p>
+			  </details>
+
+			  
+			  <br>
+			  <p>Animations:</p>
+			  <p>This was the main thing I learned developing this project, so I tried to implement as many animations as I could, such as sword drawing and holstering and various attack animations.</p>
+			  <details>
+					<summary>
+					<h1>Animation Graph</h1>
+					</summary>
+					<img src="./images/CodeExamples/AnimGraph.PNG" style="width:100%">
+					<p>The design diagram for the puzzle.</p>
+			  </details>
+			  
+			  <details>
+					<summary>
+					<h1>Mechanics Demonstration</h1>
+					</summary>
+						<iframe width="600" height="315"
+							src="https://www.youtube.com/embed/SomoeUxyRsk">
+						</iframe>
+						<p>This video demonstrates the vareity of animations such as the 3 melee animations; 3 Sword attack animations; Draw/Sheath sword animations; running and jumping.</p>
+			  </details>
+			  
+			  <br>	
+			  <p>AI Enemies:</p>
+			  <p>In order to increase the complexity of the AI enemies, I utilised Unreal Engines behaviour tree system to add various states such as attacking the player and hunting for them.</p>
+		
+				<details>
+					<summary>
+					<h1>AI Behaviour Tree</h1>
+					</summary>
+					<img src="./images/CodeExamples/BehaviourTree.PNG" style="width:100%">
+					<p>The behaviour tree for the AI enemies.</p>
+				</details>
+			  
+				<details>
+					<summary>
+					<h1>Mechanics Demonstration</h1>
+					</summary>
+						<iframe width="600" height="315"
+							src="https://www.youtube.com/embed/VuTi1Aiuk2Y">
+						</iframe>
+					<p>Video showing the behavioural states of the AI.</p>
 				</details>
 				
             </div>

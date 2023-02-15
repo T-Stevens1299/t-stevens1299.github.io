@@ -30,7 +30,7 @@
     <!-- ***** Work ***** -->
     <section class="work" id="work3">
       <div class="row">
-		<h2>Top Down Shooter</h2>
+		<h2>The Signaller</h2>
 		</div>
 	</section>
 
@@ -44,13 +44,18 @@
             <div class="work__text">
 			  <h5>Overview</h5>
               <p>
-              This 2D Top down shooter style game was was another prototype that I created in a 6 week timeframe for my university course.</p>
+              The Signaller is a 2D top down simulation game, from where you play from the perspective of a Network Rail Signaller.
+			  </p>
               <br>
               <p>
-              This was heavily inspired by the game Terraria as it featured similar weapons and enemies.
+              The aim of the game is to progress through different levels, based off real-life UK stations, by directing trains to their correct objectives. For example stopping at a platform. 
               </p>
               <p>
-              It follows a dungeon crawler format as you progress through levels killing different bosses/mini-bosses at the end of each one.
+              This is done by clicking on signals and points to stop and start trains as well as change the direction they are heading.
+              </p>
+			  <br>
+			  <p>
+              This game is currently in development and is expected to be finished by May 2023.
               </p>
 			  <br>
 			  <br>			  
@@ -61,15 +66,15 @@
               <div class="slideshowContainer">
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TopDownShooter.PNG" width="600" height="315">
+                      <img src="./images/CodeExamples/TS/Levels.PNG" style="width:100%">
                   </div>
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TDS1.png" style="width:100%">
+                      <img src="./images/CodeExamples/TS/Tutorial.PNG" style="width:100%">
                   </div>
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TDS2.png" style="width:100%">
+                      <img src="./images/CodeExamples/TS/Tamworth.PNG" style="width:100%">
                   </div>
   
                   
@@ -89,61 +94,40 @@
 		  <div class="work__text2">
 			<h5>Game Mechanics</h5>
               <p>
-              XP Progression system:</p>
-			  <p>The main mechanic of this game was the XP progressions system. Upon killing enemies, they would drop a certain number of experience.</p>
-			  <p>When the player levelled up, they would unlock a new weapon.</p>
+              Train Controller:</p>
+			  <p>The core of the game is the trains themselves, so I had to devise a system for them to operate. This is where I fell on the decision of spline track segments.</p>
+			  <p>These would be modular and could be easily placed to build levels. I just needed an appropriate script for the train to follow the splines.</p>
 			  <details>
 					<summary>
 					<h1>Code Snippets</h1>
 					</summary>
-					<img src="./images/CodeExamples/TDS/XP1.PNG" style="width:100%">
-					<p>Here is the script to check what weapon to give the player when they levelled up and also replace the old weapon they currently had. In order to determine the weapon, it checks through an array with every weapon type in it.</p>
-					<details>
-						<summary>
-							<h1>Demonstration Video</h1>
-						</summary>
-							<iframe width="600" height="315"
-								src="https://www.youtube.com/embed/uEbyPFvOJD4">
-							</iframe>
-					</details>
+					<img src="./images/CodeExamples/TS/TrainController.PNG" style="width:100%">
+					<p>This portion of the script shows an IEnumerator that gets the spline positions and runs an equation to estimate how far along the spline the train should be.</p>
 				</details>
 			  
 			  <br>
-			  <p>Checkpoints:</p>
-			  <p>As this game was quite long in duration. If the player died, rather than go back to the very beginning; I added a checkpoint system.</p>
+			  <p>Train Spawner:</p>
+			  <p>The train spawner is another crucial aspect of this project, as it allows the trains to be spawned on a set track segment with however a randomised type and objective, so each time you replay a level it won't be the same trains in the same order.</p>
 			  <details>
 					<summary>
 					<h1>Code Snippets</h1>
 					</summary>
-					<img src="./images/CodeExamples/TDS/Check1.PNG" style="width:100%">
-					<p>This is the code for a checkpoint. If the player runs over it, it changes the value in the game manager script.</p>
+					<img src="./images/CodeExamples/TS/TrainC1.PNG" style="width:100%">
+					<img src="./images/CodeExamples/TS/TrainC2.PNG" style="width:100%">
+					<p>This script contains numerous functions to decide the train type and objectives depending on the map attributes. Then calls all these functions and instansiates a train with all the decided values.</p>
 				</details>
 			  
+			  
 			  <br>	
-			  <p>Defensive Weapon Types:</p>
-			  <p>Due to the level progression system, there were many weapon types. One of the classes were the defensive weapons which aided the player more than dealing damage.</p>
+			  <p>Signal:</p>
+			  <p>The signal is a fairly simple but important game mechanic as it tells the trains to stop or go depending on what the player has set.</p>
 			  	<details>
 					<summary>
-					<h1>Mechanics Demonstration</h1>
+					<h1>Code Snippets</h1>
 					</summary>
-					<details>
-						<summary>
-							<h1>Stun Weapon</h1>
-						</summary>
-							<iframe width="600" height="315"
-								src="https://www.youtube.com/embed/c4vgA6CoMnM">
-							</iframe>
-					</details>
-					<details>
-						<summary>
-							<h1>Lifesteal Weapon</h1>
-						</summary>
-							<iframe width="600" height="315"
-								src="https://www.youtube.com/embed/OHISbiUasz8">
-							</iframe>
-					</details>
+					<img src="./images/CodeExamples/TS/Signal.PNG" style="width:100%">
+					<p>The signal works when the player clicks on it. This changes a boolean value. When a train collides with the box next to the signal, it will check this value and stop accordingly.</p>
 				</details>
-				
             </div>
 		</div>
 		

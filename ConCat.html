@@ -30,7 +30,7 @@
     <!-- ***** Work ***** -->
     <section class="work" id="work3">
       <div class="row">
-		<h2>Trials Of Deek</h2>
+		<h2>Construction Catastrophe</h2>
 		</div>
 	</section>
 
@@ -44,15 +44,20 @@
             <div class="work__text">
 			  <h5>Overview</h5>
               <p>
-              This 2D Top down shooter style game was was another prototype that I created in a 6 week timeframe for my university course.</p>
+              Construction Catastrophe is a group project I partook in during my second year of university.</p>
               <br>
               <p>
-              This was heavily inspired by the game Terraria as it featured similar weapons and enemies.
+              My role was a Junior programmer and the team had 22 members. Only 4 of which were programmers, so I had more responsibilites than anticipated.
               </p>
               <p>
-              It follows a dungeon crawler format as you progress through levels killing different bosses/mini-bosses at the end of each one.
+              I worked on the project for the entirety of its development, which was a short time frame of only 6 weeks.
               </p>
 			  <br>
+			  <div class="work__links">
+				<a href="https://mreaston.itch.io/constructioncatastrophe" target="_blank" class="link__text">
+					Download the Game on Itch.io <span>&rarr;</span>
+				</a>
+			  </div>
 			  <br>			  
 			
 
@@ -61,15 +66,15 @@
               <div class="slideshowContainer">
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TiralsOfDeek.PNG" width="600" height="315">
+                      <img src="./images/CC1.jpeg" style="width:100%">
                   </div>
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TOD1.png" style="width:100%">
+                      <img src="./images/CC2.jpeg" style="width:100%">
                   </div>
 				  
 				  <div class="mySlides fade">
-                      <img src="./images/TOD2.png" style="width:100%">
+                      <img src="./images/CC3.jpeg" style="width:100%">
                   </div>
   
                   
@@ -87,75 +92,51 @@
 		  
 		<div class="work__box">
 		  <div class="work__text2">
-			<h5>Game Mechanics</h5>
+			<h5>Contributions</h5>
               <p>
-              Weapons:</p>
-			  <p>One of the main mechanics in this game was the weapons, there were 2 main types in this game Melee and ranged.</p>
-			  <p></p>
-			  <details>
+              Chaos Destruction System: </p>
+			  <p>One of the main mechanics of this game was breakable building blocks. In order to achieve this I utilised Unreal Engine 5's Chaos Destruction system. This allows you to take a static mesh and break it into multiple pieces.</p>
+			  <p>This system required multiple re-works throughout development however to improve performance. The finalised version worked by calling a geometry collection to spawn when a block was broken, then it immediately break into many pieces as the damage threshold values were 0.</p>		
+
+				
+			  <br>
+			  <p>Tool System:</p>
+			  <p>I was also tasked with programming the entire tool system, this included the tool classes themselves as well as pickups and damage/durability functions, as well as integrating them into the character class.</p>
+			  	<details>
 					<summary>
 					<h1>Mechanics Demonstration</h1>
 					</summary>
-				<details>
-					<summary>
-					<h1>Torch Weapon Demonstration</h1>
-					</summary>
 						<iframe width="600" height="315"
-							src="https://www.youtube.com/embed/bvHypKn6XAc">
+							src="https://www.youtube.com/embed/Q4ifPHWOpfQ">
 						</iframe>
-						<p>The torch weapon was used to destroy wooden doors. However it could only do so when the torch was lit, in order to light it the player had to hit a lit campfire with the torch.</p>
-			    </details>
-			  	<details>
-					<summary>
-						<h1>Laser Gun Demonstration</h1>
-					</summary>
-						<iframe width="600" height="315"
-							src="https://www.youtube.com/embed/ihsQ6tK2DmE">
-						</iframe>
-						<p>The laser gun utilised a niagara particle beam that activated and deactivated when the mouse button was clicked. It used a line trace to deal damage to enemies/obstacles.</p>
+						<p>This video shows the tool system and using them to break building pieces which utilise the chaos destruction plugin.</p>
+					
 				</details>
-			  </details>
 			  
 			  <br>
-			  <p>Minecart Puzzle:</p>
-			  <p>As this game was a puzzle platformer I decided to add a complex puzzle to destroy a cave in which blocked the next room. This utilised pressure plates and a moving minecart.</p>
-			  <details>
-					<summary>
-					<h1>Design Diagram</h1>
-					</summary>
-					<img src="./images/CodeExamples/TOD/MP1.PNG" style="width:100%">
-					<p>The design diagram for the puzzle.</p>
-			  </details>
-			  
-			  <details>
-					<summary>
-					<h1>Mechanics Demonstration</h1>
-					</summary>
-						<iframe width="600" height="315"
-							src="https://www.youtube.com/embed/qTpnvtCD-Vg">
-						</iframe>
-			  </details>
+			  <p>Action Profiles UI:</p>
+			  <p>Since the game is local multiplayer with no split screen, the players would need a way to check their health and over vital information. Therefore we opted for player UI icons on the corner of each screen, to cater for up to 4 players.</p>
+			  <p>These UI widgets would display the tool that they currently had as well as the health and player status image. This would show if the player had been damaged, stunned or dead. I had to implement these, and I did this by utilising the UI binding functions.</p>
 			  
 			  <br>	
-			  <p>Enemy Turret:</p>
-			  <p>In order to some more challenge to the game, I decided to add an enemy turret that tracked the player and shot at them.</p>
-			  	<details>
-					<summary>
-					<h1>Design Diagram</h1>
-					</summary>
-					<img src="./images/CodeExamples/TOD/TD.PNG" style="width:100%">
-					<p>Design Diagram for the turret.</p>
+			  <p>Meteor Disaster:</p>
+			  <p>One of the main game mechanics was disasters that kill the players and destroy the structures they have built. I was tasked with creating the meteor shower. This also utilised the chaos destruction system as the design team wanted scattered meteor debris shards rather than just an explosion VFX.</p>
 
-				</details>
 				
-				<details>
+			  <br>
+			  <p>Game Over Screens:</p>
+			  <p>I was also tasked with creating the game win condition and game over screens to display the player rankings as well as their score. Which in this case is how long they were able to survive.</p>
+			  	<details>
 					<summary>
 					<h1>Mechanics Demonstration</h1>
 					</summary>
 						<iframe width="600" height="315"
-							src="https://www.youtube.com/embed/VRGftceyIiI">
+							src="https://www.youtube.com/embed/Q4ifPHWOpfQ">
 						</iframe>
-					<p>Video demonstrating the functionality of the turret.</p>
+						<p>This video shows off the meteors as well as the Action Profile UI and the Game Over Screens.</p>
+					
+					
+					
 				</details>
 				
             </div>
@@ -219,6 +200,35 @@
                 }
             slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
+    }
+</script>
+
+<script>
+    let slideIndex2 = 1;
+    showSlides2(slideIndex2);
+
+    function plusSlides2(n) {
+        showSlides2(slideIndex2 += n);
+    }
+
+    function currentSlide2(n) {
+        showSlides2(slideIndex2 = n);
+    }
+
+    function showSlides2(n) {
+        let i;
+        let slides = document.getElementsByClassName("Slides2");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex2 = 1}    
+            if (n < 1) {slideIndex2 = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+            slides[slideIndex2-1].style.display = "block";  
+        dots[slideIndex2-1].className += " active";
     }
 </script>
 </body>
