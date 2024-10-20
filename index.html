@@ -1,481 +1,297 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Thomas Stevens | Games Programmer
-  </title>
-
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+    <title>Thomas Stevens | Games Programmer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/tsfavicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 </head>
 
 <body>
+    <header>
+        <h1>Thomas Stevens</h1>
+        <nav>
+            <p class="hidemobile">Take a look at my</p>
+            <a class="tab" onclick="showSection(0)" href="#portfolio">Personal</a>
+            <a class="tab" onclick="showSection(1)" href="#portfolio">University</a>
+            <a class="tab" onclick="showSection(2)" href="#portfolio">Corporate</a>
+            <p class="hidemobile">projects.</p>
+        </nav>
 
-  <!-- ***** Header ***** -->
+        <script src="sections.js"></script>
+    </header>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">2nd Year Projects</a></li>
-		  <li class="nav__item"><a href="#work2" class="nav__link">1st Year Projects</a></li>
-		  <li class="nav__item"><a href="#work3" class="nav__link">Personal Projects</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Thomas Stevens</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Games Programmer & Designer</p>
-        <a href="PDF/CV.pdf" class="btn">CV</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>2nd Year Projects</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-		  
-		  <div class="work__box">
-            <div class="work__text">
-              <h3>Construction Catastrophe</h3>
-              <p>
-                3D Party Game
-				Collaborative Project
-              </p>
-			  <p>
-               
-              </p>
-
-              <div class="work__links">
-                <a href="ConCat.html#work" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
+    <section class="about" id ="home">
+        <br><br><br>
+        <div class="topsectionwrapper">
+            <div class="topsectiontext">
+                <h1>Hi!👋🏻 I'm Thomas Stevens</h1>
+                <h2>I am a games programmer based in Stoke-on-Trent 📍 </h2>
+                <br>
+				<p>I'm a 3rd year Computer Games Design and Programming Student at the University Of Staffordshire.</p>
+				<p>Always exploring ways to further my programming skills and create exciting projects!</p>
+                <p>I have experience working with:</p>
+                <br>
+                <div class="work-item-tags-container-two">
+					<div class="work-item-tag" style="background-color: #00b4d8">
+                        <span>C++</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #7209b7">
+                        <span>C#</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #0077b6">
+                        <span>Blueprint</span>
+                    </div>
+				    <div class="work-item-tag" style="background-color: #252422">
+                        <span>Unreal Engine</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #8E8E8E">
+                        <span>Unity</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #E63946">
+                        <span>SDL</span>
+                    </div>
+					<div class="work-item-tag" style="background-color: #fca311">
+                        <span>Blender</span>
+                    </div>
+                </div>	
+                <br>
+  
+                <br>
             </div>
-            <div class="work__image-box">
-             <iframe width="600" height="315"
-				src="https://www.youtube.com/embed/84YqbwteqRk">
-			 </iframe>
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: #d97913">
-						<span>Collaborative</span>
-				</div>
-				<div class="work-item-tag" style="background-color: ">
-						<span>UE5</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #2b2bcd">
-						<span>Blueprint</span>
-				</div>
-				<div class="work-item-tag" style="background-color: red">
-						<span>University</span>
-				</div>
-            </div>												
-			</div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>The Signaller</h3>
-              <p>
-                2D Top-down Simulator puzzle game
-              </p>
-			  <p>
-                
-              </p>
-
-              <div class="work__links">
-                <a href="TheSignaller.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-             <iframe width="600" height="315"
-				src="https://www.youtube.com/embed/uCq0BD27PQM">
-			 </iframe>
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: green">
-						<span>Individual</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #252525">
-						<span>Unity</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #258b8f">
-						<span>C#</span>
-				</div>
-				<div class="work-item-tag" style="background-color: red">
-						<span>University</span>
-				</div>
-            </div>			
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Prison Break</h3>
-              <p>
-                3D 3rd person platformer
-              </p>
-			  <p>
-                
-              </p>
-
-              <div class="work__links">
-                <a href="PrisonBreak.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <iframe width="600" height="315"
-				src="https://www.youtube.com/embed/bBrUuIvFxQI">
-			 </iframe>
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: green">
-						<span>Individual</span>
-				</div>
-				<div class="work-item-tag" style="background-color: ">
-						<span>UE5</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #2b2bcd">
-						<span>Blueprint</span>
-				</div>
-				<div class="work-item-tag" style="background-color: red">
-						<span>University</span>
-				</div>
-            </div>	
-            </div>
-          </div>  
-    </section>
-	
-	<section class="work" id="work2">
-      <div class="row">
-        <h2>1st Year Projects</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-		  
-		<div class="work__box">
-            <div class="work__text">
-              <h3>Into the Labyrinth</h3>
-              <p>
-                2D Platformer
-              </p>
-			  <p>
-               
-              </p>
-
-              <div class="work__links">
-                <a href="IntoTheLab.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <iframe width="600" height="315"
-				src="https://www.youtube.com/embed/T-RHEt5ZhF8">
-			 </iframe>
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: green">
-						<span>Individual</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #252525">
-						<span>Unity</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #258b8f">
-						<span>C#</span>
-				</div>
-				<div class="work-item-tag" style="background-color: red">
-						<span>University</span>
-				</div>
-            </div>
-          </div>
+            <img class="avatar" src="assets/WebPFP.jpg">
+			
         </div>
+		                <p class="cta" id="downloadButton">Download my CV</p>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Mario Bros. Using SDL</h3>
-              <p>
-                2D Platformer
-              </p>
-			  <p>
-                Made without a Games Engine
-              </p>
+    </section>
 
-              <div class="work__links">
-                <a href="Mario.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
+    <section class="portfolio" id="workSection">
+        <div class="centerer"><h2>Personal Projects</h2></div>
+        <div class="centerer"><p>Here are some examples of projects I have worked on in my free time, whilst not working at University or in Industry.</p></div>
+        <br>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides Personal fade">
+                <div class="heading">Little Railways</div>
+                <div class="work-item-tags-container">
+                    <div class="work-item-tag" style="background-color: #252422">
+                        <span>Unreal Engine</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #00b4d8">
+                        <span>C++</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #fca311">
+                        <span>Blender</span>
+                    </div>
+                </div>		
+                <div class="numbertext">1 / 1</div>
+                <a href="pages/littlerailways.html"><img class="image" src="assets/personal/Little Railways Web Screen.png" style="width:100%"></a>
+                <div class="text">Little Railways is a passion project of mine, inspired by the game Railroads Online, it combines the train simulator and tycoon genres together. Its set on a fictional narrow gauge railway inspired by the Ffestiniog Railway in Wales.</div>
+                <br>
+                    
             </div>
-            <div class="work__image-box">
-             <iframe width="600" height="315"
-				src="https://www.youtube.com/embed/w0x4ybcFDmM">
-			 </iframe>
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: green">
-						<span>Individual</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #94a222">
-						<span>C++</span>
-				</div>
-				<div class="work-item-tag" style="background-color: red">
-						<span>University</span>
-				</div>
-            </div>			
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Trials Of Deek</h3>
-              <p>
-                3D 3rd person platformer
-              </p>
-			  <p>
-                
-              </p>
-
-              <div class="work__links">
-                <a href="TrialsOfDeek.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <iframe width="600" height="315"
-				src="https://www.youtube.com/embed/Rnb5z1dhqQ0">
-			 </iframe>
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: green">
-						<span>Individual</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #812750">
-						<span>UE4</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #2b2bcd">
-						<span>Blueprint</span>
-				</div>
-				<div class="work-item-tag" style="background-color: red">
-						<span>University</span>
-				</div>
-            </div>	
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Top Down Shooter</h3>
-              <p>
-                2D Top Down Shooter
-              </p>
-			  <p>
-               
-              </p>
-
-              <div class="work__links">
-                <a href="TopDownShooter.html" target="_blank" class="link__text">
-                  Learn More <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <iframe width="600" height="315"
-				src="https://www.youtube.com/embed/NauWEsdAzzY">
-			 </iframe>
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: green">
-						<span>Individual</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #252525">
-						<span>Unity</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #258b8f">
-						<span>C#</span>
-				</div>
-				<div class="work-item-tag" style="background-color: red">
-						<span>University</span>
-				</div>
-            </div>
-          </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlidesPersonal(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesPersonal(1)">&#10095;</a>
         </div>
-	  
-	  
-    </section>
-	
-	<section class="work" id="work3">
-      <div class="row">
-        <h2>Personal Projects</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-		  
-		  <div class="work__box">
-            <div class="work__text">
-              <h3>3D Chess Set</h3>
-              <p>
-                Model of a chessboard I made in 3DS Max.
-              </p>
-			  <p>
-               
-              </p>
-            </div>
-            <div class="work__image-box">
-             <img src="./images/ChessSet.png" class="work__image" alt="Project 3" />
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: green">
-						<span>Individual</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #6ce2c7">
-						<span>3DS Max</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #e7b804">
-						<span>Personal</span>
-				</div>
-            </div>												
-			</div>
-          </div> 
-		  
-		  <div class="work__box">
-            <div class="work__text">
-              <h3>Wesbite Portfolio</h3>
-              <p>
-                A Game Designer portfolio I helped make for a friend.
-              </p>
-			  <p>
-               
-              </p>
-
-              <div class="work__links">
-                <a href="http://www.guvvyatwal.co.uk/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-             <img src="./images/Wesbite.png" class="work__image" alt="Project 3" />
-			 <div class="work-item-tags-container">
-				<div class="work-item-tag" style="background-color: #73b246">
-						<span>Web Design</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #7d00ff">
-						<span>HTML</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #f529dd">
-						<span>CSS</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #ff8600">
-						<span>Javascript</span>
-				</div>
-				<div class="work-item-tag" style="background-color: #e7b804">
-						<span>Personal</span>
-				</div>
-            </div>												
-			</div>
-          </div> 
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot Personal" onclick="currentSlidePersonal(1)"></span>
+        </div>  
+        <br>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <section class="portfolio" id="workSection">
+        <div class="centerer"><h2>University Projects</h2></div>
+        <div class="centerer"><p>Here are some examples of projects I completed during my time studying at University Of Staffordshire.</p></div>
+        <br>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides University fade">
+                <div class="heading">Construction Catastrophe</div>
+                <div class="work-item-tags-container">
+                    <div class="work-item-tag" style="background-color: #252422">
+                        <span>Unreal Engine</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #2b2bcd">
+                        <span>Blueprint</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #d97913">
+                        <span>Collaborative</span>
+                    </div>
+                </div>		
+                <div class="numbertext">1 / 4</div>
+                <a href="pages/concat.html"><img class="image" src="assets/university/CC.png" style="width:100%"></a>
+                <div class="text">Construction Catastrophe is the first group project I ever worked on. It is a wacky party game where players have to build a structure together then be the last man standing after a series of disasters aim to destroy what they have built. </div>
+                <br>
+            </div>
 
-    <!-- <section class="client" id="clients"> -->
-      <!-- <div class="row"> -->
-        <!-- <h2>Previous Employers</h2> -->
-        <!-- <div class="client__logos"> -->
-          <!-- <img src="./images/ronjones.png" class="client__logo" alt="Company 2" /> -->
-          <!-- <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" /> -->
-          <!-- <img src="./images/bullseye.png" class="client__logo" alt="Company 1" /> -->
-          <!-- <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" /> -->
-          <!-- <img src="./images/fastlane.png" class="client__logo" alt="Company 3" /> -->
-          <!-- <img src="./images/chippy.png" class="client__logo" alt="Company 1" /> -->
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </section> -->
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides University fade">
+                <div class="heading">The Signaller</div>
+                <div class="work-item-tags-container">
+                    <div class="work-item-tag" style="background-color: #8E8E8E">
+                        <span>Unity</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #7209b7">
+                        <span>C#</span>
+                    </div>
+                </div>	
+                <div class="numbertext">2 / 4</div>
+                <a href="pages/signaller.html"><img class="image" src="assets/university/SignallerS1.png" style="width:100%"></a>
+                <div class="text">The Signaller is a 2D top-down simulator puzzle game where players must take on the role of a Network Rail signaller. 
+They need to route trains to their destination by controlling signals and points in a variety of levels based off real stations on the UK rail network. </div>
+                <br>
+            </div>
 
-    <!-- ***** About ***** -->
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides University fade">
+                <div class="heading">Into The Labrynth</div>
+                <div class="work-item-tags-container">
+                    <div class="work-item-tag" style="background-color: #8E8E8E">
+                        <span>Unity</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #7209b7">
+                        <span>C#</span>
+                    </div>
+                </div>	
+                <div class="numbertext">3 / 4</div>
+                <a href="pages/intothelab.html"><img class="image" src="assets/university/Lab1.png" style="width:100%"></a>
+                <div class="text">Into the Labyrinth is a prototype 2D platformer that I created for my university work. A Daring fox must venture into the deadly Labyrinth to take down the Minotaur that killed his family in a 2-stage boss fight.</div>
+                <br>
+            </div>
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides University fade">
+                <div class="heading">Mario Bros. Using SDL2</div>
+                <div class="work-item-tags-container">
+                    <div class="work-item-tag" style="background-color: #00b4d8">
+                        <span>C++</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #2b2bcd">
+                        <span>SDL</span>
+                    </div>
+                </div>	
+                <div class="numbertext">4/ 4</div>
+                <a href="pages/mario.html"><img class="image" src="assets/university/Mario1.png" style="width:100%"></a>
+                <div class="text">This project was one of my first introductions to the C++ language. I had to create a lightweight game engine using C++ and SDL2 libraries, then recreate a simple version of the original Super Mario Bros within it.</div>
+                <br>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlidesUniversity(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesUniversity(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot University" onclick="currentSlideUniversity(1)"></span>
+            <span class="dot University" onclick="currentSlideUniversity(2)"></span>
+            <span class="dot University" onclick="currentSlideUniversity(3)"></span>
+            <span class="dot University" onclick="currentSlideUniversity(4)"></span>
+        </div>
+        <br>
+    </section>
+
+    <section class="portfolio" id="workSection">
+        <div class="centerer"><h2>Corporate Projects</h2></div>
+        <div class="centerer"><p>Here are some examples of Industry projects I have worked on during my time working at Bulldog Studios.</p></div>
+        <br>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides Corporate fade">
+                <div class="heading">Ecopolis</div>
+                <div class="work-item-tags-container">
+                    <div class="work-item-tag" style="background-color: #8E8E8E">
+                        <span>Unity</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #7209b7">
+                        <span>C#</span>
+                    </div>
+                    <div class="work-item-tag" style="background-color: #d97913">
+                        <span>Collaborative</span>
+                    </div>
+                </div>	
+                <div class="numbertext">1 / 1</div>
+                <a href="pages/ecopolis.html"><img class="image" src="assets/corporate/Ecopolis.png" style="width:100%"></a>
+                <div class="text">Ecopolis is a city builder I worked on when working for Bulldog Studios. It is a city builder made to encourage and promote green city planning to young students and teach them the consequences of pollution.</div>
+                <br>
+            </div>
+
+            <!-- Full-width images with number and caption text -->
+            <!-- <div class="mySlides Corporate fade"> -->
+                <!-- <div class="heading">Astro Csaba</div> -->
+                <!-- <div class="work-item-tags-container"> -->
+                    <!-- <div class="work-item-tag" style="background-color: #252422"> -->
+                        <!-- <span>Unreal Engine</span> -->
+                    <!-- </div> -->
+                    <!-- <div class="work-item-tag" style="background-color: #2b2bcd"> -->
+                        <!-- <span>Blueprint</span> -->
+                    <!-- </div> -->
+                    <!-- <div class="work-item-tag" style="background-color: #00b4d8"> -->
+                        <!-- <span>C++</span> -->
+                    <!-- </div> -->
+					<!-- <div class="work-item-tag" style="background-color: #d97913"> -->
+                        <!-- <span>Collaborative</span> -->
+                    <!-- </div> -->
+                <!-- </div>	 -->
+                <!-- <div class="numbertext">2 / 2</div> -->
+                <!-- <a href="pages/littlerailways.html"><img class="image" src="assets/Placeholder.png" style="width:100%"></a> -->
+                <!-- <div class="text">Astro Csaba is a murder mystery game inspired by titles such as Among Us and Lethal Company. A team of pirates raid an alien spaceship searching for treasure, however they must work together or betray each other using the ships deadly traps in order to make their fortune.</div> -->
+               <!-- <br> -->
+            <!-- </div> -->
+		
+			
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlidesCorporate(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesCorporate(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot Corporate" onclick="currentSlideCorporate(1)"></span>
+            <span class="dot Corporate" onclick="currentSlideCorporate(2)"></span>
+        </div>
+        <br>
+    </section>
+
 
     <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>Hello there, I am a 2nd year university student currently studying Computer Games Design and Programming at Staffordshire University. I enjoy the challenge of learning new programming languages and software in order to expand my skillset and push myself to create stand-out work.</p>
-            <!-- Provide a link to your resume -->
-          </div>
-        </div>
-      </div>
+        <h2>A bit about me...</h2>
+        <br>
+        <p>Hi, I'm Thomas Stevens, a third-year Computer Games Design and Programming student at Staffordshire University. With A-levels in Computer Science, Maths, and Geography, I have a strong foundation in technical subjects.</p>
+        <br>
+        <p>Over the past three years, I've immersed myself in industry-standard languages like C# and C++, while gaining hands-on experience with the Unreal and Unity game engines. Although I appreciate the creative aspects of game design, my primary focus lies in programming and developing a successful career in this field.</p>
+        <br>
+        <p>My placement year at a games development studio was invaluable. I contributed to various projects, honed my programming skills, and even led a small team, effectively bridging communication between the team and management. This experience significantly enhanced both my technical abilities and interpersonal skills.</p>
+        <br>
+        <p>I'm eager to discuss potential projects or answer any questions you may have. Feel free to reach out – I'm always happy to help.</p>
+        
+        <br><br>
+        <div class="centerer buttonswapper"><a class="oop" href="mailto:thomasstevens2003@outlook.com">Contact me by Email</a><a class="oop" id="downloadButton">Download my CV</a></div>
+
     </section>
-  </main>
 
-  <!-- ***** Contact ***** -->
+    <script src="slideshowcorporate.js"></script>
+    <script src="slideshowuniversity.js"></script>
+    <script src="slideshowpersonal.js"></script>
+    <script src="download.js"></script>
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Contact Me</h2>
-      <div class="contact__info">
-        <p>
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:t.stevens2003@gmail.com" class="btn">Email</a>
-      </div>
-    </div>
-  </section>
+    <footer>
+        <a href="mailto:hartgrovedaniel3@outlook.com">📧 © 2024 Daniel Hartgrove</a>
+        
+        <a href="https://www.danielhartgrove.xyz">© 2024 canyoubuildasiteforme </a>
 
-  <!-- ***** Footer ***** -->
+        <p>All Rights Reserved</p>
+    </footer>
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/thomas-stevens-91a225254/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-		  <a href="https://github.com/T-Stevens1299">
-            <img src="./images/github.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy Thomas Stevens 2022, website written and designed by Thomas Stevens</a>
-      </p>
-      
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,135 @@
+  /* Slideshow container */
+  .slideshow-container {
+      max-width: 1000px;
+      height: auto;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow:  0px 0px 4px rgba(25, 0, 0, 0.25);
+    }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    z-index: 1;
+
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #780000;
+    background-color: #FDF0D5;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 100;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #252525;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading {
+    color: #252525;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 8px 12px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #780000;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #780000;
+  }
+
+
+  .image{
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
+@media only screen and (width < 1024px) and (orientation : portrait) {    
+  .text{
+    font-size: 0.8rem;
+  }
+
+  .mySlides{
+    padding-top: 10px;
+  }
+
+  .heading{
+    display: 1.5rem;
+  }
+
+  .numbertext{
+    display: none;
+  }
+
+.next, .prev{
+    top: 10%;
+}
+
+  .slideshow-container{
+    max-width: 100%;
+  }
+}
