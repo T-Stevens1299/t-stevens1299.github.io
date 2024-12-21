@@ -68,8 +68,13 @@
     .projecttext{
         width: 80%;
         height: 100%;
+        padding-top: 15%;
         padding-bottom:  10%;
         justify-content: center;
+    }
+
+    .projecttext h2{
+        padding-top: 20%;
     }
 
     .projectimages{
@@ -101,5 +106,9 @@
 
     .projectimage{
         width: 70%;
+    }
+
+    .projecttext{
+        padding-top: 100px;
     }
 }

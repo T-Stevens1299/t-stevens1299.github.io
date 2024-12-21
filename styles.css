@@ -108,8 +108,10 @@ header nav a:hover {
 }
 
 .avatar{
-  width: 300px;
+  max-width: 300px;
+  width: auto;
   height: 300px;
+
   border-radius: 50%;
 }
 
@@ -276,6 +278,8 @@ li{
       font-size: 3em;
       color: #FDF0D5;
       padding: 5%;
+      width: 100vw;
+      text-align: center;
     }
 
     header nav{
@@ -327,6 +331,27 @@ li{
       display: none;
     }
 
+    .centerer{
+      width: 100vw;
+    }
+
+    .portfolio h2{
+      margin-top: 20vh;
+      width: 100%;
+      text-align: center;
+    }
+
+    .portfolio {
+      padding: 5px;
+      background-color: #FDF0D5;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #252525;
+      position: relative;
+      z-index: 101;
+      display: none;
+    }
+
     .work-item-tags-container-two{
       display: flex;
       flex-wrap: wrap;
@@ -345,6 +370,33 @@ li{
 
     .servicecard p{
       font-size: 1em;
+    }
+
+    .topsectionwrapper{
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .topsectiontext h1{
+      font-size: 30px;
+    }
+
+    .centerer p{
+      width: 90%;
+      text-align: center;
+    }
+
+    .topsectiontext h2{
+      font-size: 24px;
+    }
+
+    .topsectiontext p{
+      font-size: 18px;
+    }
+
+    .centerer{
+      width: 100%;
     }
 
     .centerer p{
@@ -412,15 +464,7 @@ li{
     }
 
     .cta{
-      text-decoration: none;
-      color: #FDF0D5;
-      font-size: 1rem;
-      padding: 16px 32px;
-      border-radius: 99px;
-      background: #780000;
-      text-align: center;
-      width: 80%;
-      margin-left: 5%;
+      display: none;
     }
 
     .about h2{
@@ -460,4 +504,19 @@ li{
       margin: 5%;
       justify-content: space-between;
     }
+
+    .about {
+      padding: 20px;
+      background: #C1121F;
+      color: #FDF0D5;
+      position: relative;
+      text-align: center;
+      z-index: 100;
+    }
+
+    .about h2{
+      padding-top: 25px;
+    }
+
+
 }
