@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thomas Stevens | Games Programmer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/tsfavicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="../slideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <h1>Nautical Nonsense</h1>
+        <nav>
+            <a href="https://www.thomasstevens.xyz" href="#portfolio">Back to Homepage</a>
+        </nav>
+    </header>
+    <section>
+        <div class="columnsplitter">
+            <div class="projecttext">
+				
+				<h2>Project Description</h2>
+                <p>A whimsical underwater FPS. Where you use bubbles to eject evil Boctopus (bubble-shooting octopus) from the ocean. Whilst reclaiming the lost crystal treasures of the deep.</p>
+				
+				<h2>Project Info</h2>
+				<p>Role: Lead Programmer and Technical Designer</p>
+				<p>Team Size: 8</p>
+				<p>Time Frame: 48 Hours</p>
+				<p>Engine & Language: Unreal with Blueprint</p>
+
+
+                <h2>My Contributions</h2>
+                <p>As the sole programmer, I programmed every main game mechanic seen in the game, as well as working as a technical designer to make the game objects using blueprint to allow easy access for designers to tweak variables and information easily.</p>
+				<p>The main aspect I focused on apart from the enemy and character mechanics was implementing the backend systems of the UI and audio components. The most time was spent on the level select screen.</p>
+
+                <h2>Highlighted Mechanic: Saved Level Progress and Highscores</h2>
+                <p>As part of the level select screen, I implemented a persistant progress system, this allows players to track their highscores in each level during the current playsession. Also it allows players to progress through levels in chronological order as only after they complete level 1 does level 2 become unlocked.</p>
+                <p>The functonality of this mechanic involved using a struct that was a variable of a custom game instance blueprint. Since this persists between levels, when a level is complete the stats are passed to the instance and saved in the struct. When the main menu is opened, the struct updates the levels that are unlocked and the current high-scores.</p>
+
+				<h2>Project Reflection</h2>
+                <p>Overall, considering this was a game jam project made in 48 hours, it turned out very polished due to the large team size and the fact that we had team members of all different dicisplines. As the sole programmer of the team, I managed the GitHub source control and ensured all branches were merged and conflicts were avoided.</p>
+            
+                <div class="centerer"><a class="cta" href="https://t-stevens1299.itch.io/nautical-nonsense">Play the Game</a></div>
+
+            </div>
+
+            <div class="projectimages">
+                <br><br>
+                <ul>
+                <li><iframe class="video" width="620px" height="320px" style="padding: 10px;" frameBorder="0"
+                    src="https://www.youtube.com/embed/iU1fHMOy7lc">
+                </iframe></li> 
+                <li><img class="projectimage" src="../assets/personal/NN1.png" alt="Project Image"></li>
+                <li><img class="projectimage" src="../assets/personal/NN2.png" alt="Project Image"></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:hartgrovedaniel3@outlook.com">📧 © 2024 Daniel Hartgrove</a>
+        <a href="https://www.danielhartgrove.xyz">www.danielhartgrove.xyz</a>
+        <p>All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

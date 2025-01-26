@@ -3,12 +3,12 @@ showSlidesPersonal(slideIndexP);
 
 // Next/previous controls
 function plusSlidesPersonal(n) {
-  showSlides(slideIndexP += n);
+  showSlidesPersonal(slideIndexP += n);
 }
 
 // Thumbnail image controls
 function currentSlidePersonal(n) {
-  showSlides(slideIndexP = n);
+  showSlidesPersonal(slideIndexP = n);
 }
 
 function showSlidesPersonal(n) {
