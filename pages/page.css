@@ -46,12 +46,17 @@
 }
 
 ul{
-    width: 50%;
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
 }
 
 .projectimage{
-    max-width: 80%;
+    max-width: 100%;
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
@@ -103,12 +108,6 @@ ul{
         width: 10%;
         margin-right: 200px;
         height: auto;
-    }
-
-    li{
-        width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
     .projectimage{
