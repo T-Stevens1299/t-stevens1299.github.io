@@ -42,8 +42,12 @@
     align-items: center;
     width: 50%;
     margin-bottom: -40px;
-    height: 100%;
     background-color: #FDF0D5;
+}
+
+ul{
+    width: 50%;
+    height: 100%;
 }
 
 .projectimage{
@@ -51,6 +55,10 @@
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
+}
+
+.cta{
+    margin-bottom: 20px;
 }
 
 
