@@ -1,3 +1,5 @@
+
+
 .columnsplitter{
     padding-top: 5%;
     display: flex;
@@ -17,7 +19,7 @@
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    width: 50%;
+    width: 55%;
     padding-right: 5%;
     height: 100%;
     background-color: #C1121F;
@@ -35,25 +37,22 @@
 
 .projectimages{
     display: flex;
-    top: -10px;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     width: 50%;
     margin-bottom: -40px;
     background-color: #FDF0D5;
 }
 
 ul{
-    width: 100%;
-    height: 100%;
-    display: flex;
+    width: 620px;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
+    display: flex;
     flex-direction: column;
 }
+
 
 .projectimage{
     max-width: 100%;
