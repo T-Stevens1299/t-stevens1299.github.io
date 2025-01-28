@@ -13,12 +13,12 @@
 .projecttext{
     padding-top: 2%;
     padding-left: 5%;
-
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    width: 100%;
+    width: 50%;
+    padding-right: 5%;
     height: 100%;
     background-color: #C1121F;
 }
@@ -47,8 +47,7 @@
 }
 
 .projectimage{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;

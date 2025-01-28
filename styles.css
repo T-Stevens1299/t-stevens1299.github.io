@@ -156,7 +156,7 @@ header nav a:hover {
   color: #252525;
   position: relative;
   z-index: 101;
-  display: none;
+  display: none
 }
 
 .portfolio h1 {
@@ -336,7 +336,7 @@ li{
     }
 
     .portfolio h2{
-      margin-top: 20vh;
+      margin-top: 25vh;
       width: 100%;
       text-align: center;
     }
