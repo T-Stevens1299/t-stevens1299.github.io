@@ -252,6 +252,8 @@ li{
   margin-left: 2px;
   margin-right: 2px;
   text-align: center;
+  display: flex;
+  align-items: center;
   box-shadow: #FDF0D525 1px 1px 1px 1px inset;
 }
 
