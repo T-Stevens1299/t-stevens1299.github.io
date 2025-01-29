@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thomas Stevens | Games Programmer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/tsfavicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="../slideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <header>
+        <h1>INTO THE LABYRINTH</h1>
+        <nav>
+            <a href="https://www.thomasstevens.xyz" href="#portfolio">Back to Homepage</a>
+        </nav>
+    </header>
+    <section>
+        <div class="columnsplitter">
+            <div class="projecttext">
+				
+				<h2>Project Description</h2>
+                <p>Into the Labyrinth is a 2D prototype platformer with Super Mario style mechanics of jumping on enemies and shooting fireballs to destroy them. It concludes in a 2 stage boss fight against an evil Minotaur.</p>
+				
+				<h2>Project Info</h2>
+				<p>Role: Gameplay Programmer and Designer</p>
+				<p>Team Size: 1</p>
+				<p>Time Frame: 6 Weeks</p>
+				<p>Engine & Language: Unity with C#</p>
+
+
+                <h2>Project Introduction</h2>
+                <p>As part of my module called Rapid Games Prototyping, the year was split in 4 where each quarter we had 6 weeks to expand on an existing framework in Unity and implement a number of new mechanics. The process was to get us used to coding prototype mechanics quickly. The highlight project out of the 4 was Into the Labyrinth, a 2D platformer project.</p>
+				<p>Not only did I manage to implement a vareity of different mechanics, I implemented animations and applied setdressing to the levels to make it look more polished. As I implemented the mechanics quickly, I had plenty of time for extra work on the project.</p>
+				
+				<h2>Highlighted Mechanics</h2>
+                <h1>#1 Character Controller</h1>
+				<p>With the character controller, I decided to replicate the controls of Super Marios to an extent, having fast paced movement, dodges and dashes as well as a fireball projectile system for combat. This was all farely rudementary to implement in Unity. The challenging part however was making the movement mesh well with the animations.</p>
+				<p>This required research into Unity's animation system, however once I gained an understanding of how it worked in relation to 2D sprites, I implemented smooth animations on not just the character, but the enemies and even a fire hazard.</p>
+				<h1>#2 The Boss Fight</h1>
+                <p>The boss fight was the most complex system to make in this project. Firstly, I coded a system that would get a reference to the player location and make the boss move towards the player, this function was called in update to ensure if the player jumped over the boss, it would immediately change directions.</p>
+				<p>I then utilsied state machines to swap between various states such as chasing the player, its first stage attack, and the second stage attack. The state was determined wether or not the player was in a collision box range on whether the boss ran or attacked. And the type of run and attack was set based off the current health. Below half health it would swap the the enrage state and become more powerful.</p>
+                <h2>Project Reflection</h2>
+                <p>Overall this project turned out very well, despite being a prototype, due to my quick coding in the first few weeks of development, I managed to make it look polished. I also was graded 100% for this project and the entire module overall. It definetely helped me become more confident in Unity and C#, a skill I would use heavily during my work placement.</p>
+                <br>
+            </div>
+
+            <div class="projectimages">
+                <br><br>
+                <ul>
+				<li><iframe class="video" width="620px" height="320px" style="padding: 10px;" frameBorder="0"
+					src="https://www.youtube.com/embed/T-RHEt5ZhF8">
+				</iframe></li>
+                <li><img class="projectimage" src="../assets/university/Lab2.png" alt="Project Image"></li>
+                <li><img class="projectimage" src="../assets/university/Lab3.png" alt="Project Image"></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.danielhartgrove.xyz">© 2025 Thomas Stevens </a>
+        <a href="mailto:hartgrovedaniel3@outlook.com">📧 Website Constructed by Daniel Hartgrove</a>
+        <p>All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thomas Stevens | Games Programmer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/tsfavicon.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="./page.css">
+    <link rel="stylesheet" href="../slideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <header>
+        <h1>THE SIGNALLER</h1>
+        <nav>
+            <a href="https://www.thomasstevens.xyz" href="#portfolio">Back to Homepage</a>
+        </nav>
+    </header>
+    <section>
+        <div class="columnsplitter">
+            <div class="projecttext">
+			
+				<h2>Project Description</h2>
+                <p>The signaller is a 2D top-down simulator puzzle game where players must take on the role of a Network Rail signaller. They need to route trains to their destination by controlling signals and points in a variety of levels based of real stations on the UK rail network.</p>
+				
+				<h2>Project Info</h2>
+				<p>Role: Gameplay Programmer/Games Designer/Games Artist</p>
+				<p>Team Size: 1</p>
+				<p>Time Frame: 165 Hours across 1 academic year</p>
+				<p>Engine & Language: Unity with C#</p>
+
+
+                <h2>Project Introduction</h2>
+                <p>The Signaller is a project I worked on in my second year of university for a module called 'Indie Games Development.' The premise of this module was to create a fully fledged indie game by the end of the year using the industry standard workflows of sprint plans.</p>
+                <p>I decided to make a signalling simulator based upon the actual software that Network Rail uses, which is the projects graphical inspiration. I did however need to gameify this system in order to make it fun and challenging to play, to do this I added a lives system and a set amount of trains to route.</p>
+				<p>The train order is random so no two playthroughs of a level are the same. There are also 3 diffculties that increase the number of trains to route and reduce your life count the higher the difficulty you select. All the levels are also based on real life locations in the UK using a collection of google maps and signalling maps to be as accurate as possible</p>
+			   
+				<h2>Highlighted Mechanics</h2>
+                <h1>#1 Modular train track system</h1>
+				<p>In order to create the track system, I needed to code in a spline system for the trains to move on. However I needed the trains to be able to switch tracks and move backwards if they pulled into a terminus platform. Therefore I used track sections with individual spline and collision boxes to allow a train to move from one track to another. This also worked well with the points system as when a point was changed you just changed the RouteToFollow variable in the points collision box.</p>
+                <h1>#2 Train spawning</h1>
+                <p>The other mechanic I wanted to highlight was train spawning system. To increase level replayability, the train would spawn with a random type and assigned location. This would keep players alert every time they played a level rather than memorising movements. The system would work by selecting a train type and destination based on properties in the spawning track. These could be ajdusted depending on what sort of level I wanted to make, whether a hub station where every train stops, or a rural station where only commuters stop.</p>
+				<h2>Project Reflection</h2>
+                <p>Overall this project was a success not only as it got me a first in the module; but because it broadened my understanding of the techniques used to create a fully fledged game and how time consuming it actually is. However now I understand these techniques it should aid my future career since industry utilise these techniques, just ona  bigger scale.</p>
+				<br>
+            </div>
+
+            <div class="projectimages">
+                <br><br>
+                <ul>
+				<li><iframe class="video" width="620px" height="320px" style="padding: 10px;" frameBorder="0"
+					src="https://www.youtube.com/embed/uCq0BD27PQM">
+				</iframe></li>
+                <li><img class="projectimage" src="../assets/university/TS2.png" alt="Project Image"></li>
+                <li><img class="projectimage" src="../assets/university/TS3.png" alt="Project Image"></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:hartgrovedaniel3@outlook.com">📧 © 2024 Daniel Hartgrove</a>
+        <a href="https://www.danielhartgrove.xyz">www.danielhartgrove.xyz</a>
+        <p>All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
