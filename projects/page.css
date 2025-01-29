@@ -25,14 +25,27 @@
 }
 
 .projecttext h2{
-    font-size: 1.6em;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.projecttext h3{
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.projecttext h4{
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
 .projecttext p{
     font-size: 1em;
     margin-bottom: 15px;
+    padding-left: 2%;
 }
+
+
 
 .projectimages{
     display: flex;
