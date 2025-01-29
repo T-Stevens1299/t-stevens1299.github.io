@@ -91,6 +91,12 @@ header nav a:hover {
   margin-top: 10%;
 }
 
+.topsectionimage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cta{
   text-decoration: none;
   color: #FDF0D5;
@@ -107,7 +113,6 @@ header nav a:hover {
   max-width: 300px;
   width: auto;
   height: 300px;
-
   border-radius: 50%;
 }
 
