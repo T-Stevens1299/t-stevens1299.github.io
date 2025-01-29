@@ -1,6 +1,6 @@
   /* Slideshow container */
   .slideshow-container {
-      max-width: 700px;
+      max-width: 704px;
       height: auto;
       position: relative;
       margin: auto;
@@ -12,7 +12,17 @@
   .mySlides {
     display: none;
     z-index: 1;
+  }
 
+  .mySlides a{
+    display: block;
+    overflow: hidden;
+    width: 704px;
+    height: 384px;
+  }
+
+  .mySlides a img{
+    object-fit: cover;
   }
   
   /* Next & previous buttons */
@@ -45,7 +55,8 @@
   }
   
   /* Caption text */
-  .text {
+  .text{
+    height: 100px;
     color: #252525;
     font-size: 15px;
     padding: 8px 12px;
