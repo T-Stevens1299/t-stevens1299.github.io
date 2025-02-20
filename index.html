@@ -9,11 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Thomas Stevens</h1>
+    <header id="header">
+        <a onclick="toTop()"><h1>Thomas Stevens</h1></a>
         <nav>
             <p class="hidemobile">Take a look at my</p>
             <a class="tab" onclick="showSection(0)" href="#portfolio">Personal</a>
@@ -25,299 +29,306 @@
         <script src="sections.js"></script>
     </header>
 
-    <section class="about" id ="home">
-        <br>
-        <div class="topsectionwrapper">
-            <div class="topsectiontext">
-                <h1>Hi!👋🏻 I'm Thomas Stevens</h1>
-                <h2>I am a games programmer based in Stoke-on-Trent 📍 </h2>
-                <br>
-				<p>I'm a 2 time award winning Games Design and Programming Student at the University Of Staffordshire.</p>
-				<p>Always exploring ways to further my programming skills and create exciting projects!</p>
-                <p>I have experience working with:</p>
-                <br>
-                <div class="work-item-tags-container-two">
-					<div class="work-item-tag" style="background-color: #00b4d8">
-                        <span>C++</span>
+    <section class="about" id="home">
+        <br><br><br>
+        <div id="aboutwrapper">
+            <div class="split_container inverse-mobile">
+                <div id="abouttext" class="split_content column">
+                    <h1>Hi!👋🏻 I'm Thomas Stevens</h1>
+                    <h2>I am a games programmer based in Stoke-on-Trent 📍 </h2>
+                    <div class="container row left hidemobile">
+                        <div class="work-item-tag" style="background-color: #00b4d8">
+                            <span>C++</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #7209b7">
+                            <span>C#</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #0077b6">
+                            <span>Blueprint</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #252422">
+                            <span>Unreal</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #8E8E8E">
+                            <span>Unity</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #E63946">
+                            <span>SDL</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #fca311">
+                            <span>Blender</span>
+                        </div>
                     </div>
-                    <div class="work-item-tag" style="background-color: #7209b7">
-                        <span>C#</span>
+                    <br>
+                    <p>I'm a 2 time award winning Games Design and Programming Student at the University Of Staffordshire. I'm always exploring ways to further my programming skills and create exciting projects!</p>
+                    <br>
+                    <div id="social_links">
+                        <a href="https://uk.linkedin.com/"><i class="fa fa-github"></i></a>
+                        <a href="https://uk.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                        <a href="mailto:thomasstevens2003@outlook.com"><i class="fa fa-envelope"></i></a>
                     </div>
-                    <div class="work-item-tag" style="background-color: #0077b6">
-                        <span>Blueprint</span>
-                    </div>
-				    <div class="work-item-tag" style="background-color: #252422">
-                        <span>Unreal Engine</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #8E8E8E">
-                        <span>Unity</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #E63946">
-                        <span>SDL</span>
-                    </div>
-					<div class="work-item-tag" style="background-color: #fca311">
-                        <span>Blender</span>
-                    </div>
-                </div>	
-                <br>
-  
-                <br>
-            </div>
-            <div class="topsectionimage">
-                <img class="avatar" src="assets/WebPFP.jpg">
+                    <br><br>
+                </div>
+                <div class="split_content column center">
+                    <img class="image_main center" src="assets/WebPFP.jpg">
+                </div>
             </div>
         </div>
-       <a class="cta" href="https://github.com/T-Stevens1299">Check out my GitHub</a>
-
-
     </section>
 
     <section class="portfolio" id="workSection">
-        <br>
-        <div class="centerer"><h2>Personal Projects</h2></div>
-        <br>
-        <div class="centerer"><p>Here are some examples of projects I have worked on in my free time, whilst not working at University or in Industry.</p></div>
-        <br>
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides Personal fade">
-                <div class="heading">Little Railways</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #252422">
-                        <span>Unreal Engine</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #00b4d8">
-                        <span>C++</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #fca311">
-                        <span>Blender</span>
-                    </div>
-                </div>		
-                <div class="numbertext">1 / 2</div>
-                <a href="./projects/littlerailways"><img class="image" src="assets/personal/Little Railways Web Screen.png" style="width:100%"></a>
-                <div class="text">Little Railways is a passion project of mine, inspired by the game Railroads Online, it combines the train simulator and tycoon genres together. Its set on a fictional narrow gauge railway inspired by the Ffestiniog Railway in Wales.</div>
-                <br>                
-            </div>
+        <div class="container column center centraltext">
+            <br><br><br>
+            <h2>Personal Projects</h2>
+            <br><p>Here are some examples of projects I have worked on in my free time, whilst not working at University or in Industry.</p>
+            <br>
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides Personal fade">
+                    <div class="heading">Little Railways</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #252422">
+                            <span>Unreal Engine</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #00b4d8">
+                            <span>C++</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #fca311">
+                            <span>Blender</span>
+                        </div>
+                    </div>		
+                    <div class="numbertext">1 / 2</div>
+                    <a href="./projects/littlerailways"><img class="image" src="assets/personal/Little Railways Web Screen.png" style="width:100%"></a>
+                    <div class="text">Little Railways is a passion project of mine, inspired by the game Railroads Online, it combines the train simulator and tycoon genres together. Its set on a fictional narrow gauge railway inspired by the Ffestiniog Railway in Wales.</div>
+                    <br>                
+                </div>
 
-            <div class="mySlides Personal fade">
-                <div class="heading">Nautical Nonsense</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #252422">
-                        <span>Unreal Engine</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #2b2bcd">
-                        <span>Blueprint</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #d97913">
-                        <span>Collaborative</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #ffbb00">
-                        <span>Award Winner</span>
-                    </div>
-                </div>		
-                <div class="numbertext">2 / 2</div>
-                <a href="./projects/nautical"><img class="image" src="assets/personal/NNSplash.png" style="width:100%"></a>
-                <div class="text">A whimsical underwater FPS. Where you use bubbles to eject evil Boctopus (bubble-shooting octopus) from the ocean. Whilst reclaiming the lost crystal treasures of the deep; created for the 2025 Global Games Jam.</div>
-                <br>                
-            </div>
+                <div class="mySlides Personal fade">
+                    <div class="heading">Nautical Nonsense</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #252422">
+                            <span>Unreal Engine</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #2b2bcd">
+                            <span>Blueprint</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #d97913">
+                            <span>Collaborative</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #ffbb00">
+                            <span>Award Winner</span>
+                        </div>
+                    </div>		
+                    <div class="numbertext">2 / 2</div>
+                    <a href="./projects/nautical"><img class="image" src="assets/personal/NNSplash.png" style="width:100%"></a>
+                    <div class="text">A whimsical underwater FPS. Where you use bubbles to eject evil Boctopus (bubble-shooting octopus) from the ocean. Whilst reclaiming the lost crystal treasures of the deep; created for the 2025 Global Games Jam.</div>
+                    <br>                
+                </div>
 
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlidesPersonal(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlidesPersonal(1)">&#10095;</a>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlidesPersonal(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesPersonal(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot Personal" onclick="currentSlidePersonal(1)"></span>
+                <span class="dot Personal" onclick="currentSlidePersonal(2)"></span>
+            </div>  
+            <br>
         </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot Personal" onclick="currentSlidePersonal(1)"></span>
-            <span class="dot Personal" onclick="currentSlidePersonal(2)"></span>
-        </div>  
-        <br>
     </section>
 
     <section class="portfolio" id="workSection">
-        <br>
-        <div class="centerer"><h2>University Projects</h2></div>
-        <br>
-        <div class="centerer"><p>Here are some examples of projects I completed during my time studying at University Of Staffordshire.</p></div>
-        <br>
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides University fade">
-                <div class="heading">Construction Catastrophe</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #252422">
-                        <span>Unreal Engine</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #2b2bcd">
-                        <span>Blueprint</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #d97913">
-                        <span>Collaborative</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #ffbb00">
-                        <span>Award Winner</span>
-                    </div>
-                </div>		
-                <div class="numbertext">1 / 6</div>
-                <a href="./projects/concat/"><img class="image" src="assets/university/CC.png" style="width:100%"></a>
-                <div class="text">Construction Catastrophe is the first group project I ever worked on. It is a wacky party game where players have to build a structure together then be the last man standing after a series of disasters aim to destroy what they have built. </div>
-                <br>
-            </div>
-			
-            <div class="mySlides University fade">
-                <div class="heading">Dissertation Project</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #252422">
-                        <span>Unreal Engine</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #00b4d8">
-                        <span>C++</span>
-                    </div>
-                </div>		
-                <div class="numbertext">2 / 6</div>
-                <a href="./projects/dissertation/"><img class="image" src="assets/university/dissertation.png" style="width:100%"></a>
-                <div class="text">This is the project I worked on as part of my dissertation.</div>
-                <br>
-            </div>
+        <div class="container column center centraltext">
+            <br><br><br>
+            <h2>University Projects</h2>
+            <br>
+            <p>Here are some examples of projects I completed during my time studying at University Of Staffordshire.</p>
+            <br>
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides University fade">
+                    <div class="heading">Construction Catastrophe</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #252422">
+                            <span>Unreal Engine</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #2b2bcd">
+                            <span>Blueprint</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #d97913">
+                            <span>Collaborative</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #ffbb00">
+                            <span>Award Winner</span>
+                        </div>
+                    </div>		
+                    <div class="numbertext">1 / 6</div>
+                    <a href="./projects/concat/"><img class="image" src="assets/university/CC.png" style="width:100%"></a>
+                    <div class="text">Construction Catastrophe is the first group project I ever worked on. It is a wacky party game where players have to build a structure together then be the last man standing after a series of disasters aim to destroy what they have built. </div>
+                    <br>
+                </div>
+                
+                <div class="mySlides University fade">
+                    <div class="heading">Dissertation Project</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #252422">
+                            <span>Unreal Engine</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #00b4d8">
+                            <span>C++</span>
+                        </div>
+                    </div>		
+                    <div class="numbertext">2 / 6</div>
+                    <a href="./projects/dissertation/"><img class="image" src="assets/university/dissertation.png" style="width:100%"></a>
+                    <div class="text">This is the project I worked on as part of my dissertation.</div>
+                    <br>
+                </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides University fade">
-                <div class="heading">The Signaller</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #8E8E8E">
-                        <span>Unity</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #7209b7">
-                        <span>C#</span>
-                    </div>
-                </div>	
-                <div class="numbertext">3 / 6</div>
-                <a href="./projects/signaller/"><img class="image" src="assets/university/SignallerS1.png" style="width:100%"></a>
-                <div class="text">The Signaller is a 2D top-down simulator puzzle game where players must take on the role of a Network Rail signaller. 
-They need to route trains to their destination by controlling signals and points in a variety of levels based off real stations on the UK rail network. </div>
-                <br>
-            </div>
-			
-			<div class="mySlides University fade">
-                <div class="heading">TF2 Subway Map</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #F74843">
-                        <span>Hammer Editor</span>
-                    </div>
-                </div>	
-                <div class="numbertext">4 / 6</div>
-                <a href="./projects/subway/"><img class="image" src="assets/university/Subway1.png" style="width:100%"></a>
-                <div class="text">As part of my module Multiplayer Level Design I was tasked with creating a king of the hill map for Team Fortress 2 in the hammer editor.</div>
-                <br>
-            </div>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides University fade">
+                    <div class="heading">The Signaller</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #8E8E8E">
+                            <span>Unity</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #7209b7">
+                            <span>C#</span>
+                        </div>
+                    </div>	
+                    <div class="numbertext">3 / 6</div>
+                    <a href="./projects/signaller/"><img class="image" src="assets/university/SignallerS1.png" style="width:100%"></a>
+                    <div class="text">The Signaller is a 2D top-down simulator puzzle game where players must take on the role of a Network Rail signaller. 
+    They need to route trains to their destination by controlling signals and points in a variety of levels based off real stations on the UK rail network. </div>
+                    <br>
+                </div>
+                
+                <div class="mySlides University fade">
+                    <div class="heading">TF2 Subway Map</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #F74843">
+                            <span>Hammer Editor</span>
+                        </div>
+                    </div>	
+                    <div class="numbertext">4 / 6</div>
+                    <a href="./projects/subway/"><img class="image" src="assets/university/Subway1.png" style="width:100%"></a>
+                    <div class="text">As part of my module Multiplayer Level Design I was tasked with creating a king of the hill map for Team Fortress 2 in the hammer editor.</div>
+                    <br>
+                </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides University fade">
-                <div class="heading">Into The Labrynth</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #8E8E8E">
-                        <span>Unity</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #7209b7">
-                        <span>C#</span>
-                    </div>
-                </div>	
-                <div class="numbertext">5 / 6</div>
-                <a href="./projects/intothelab/"><img class="image" src="assets/university/Lab1.png" style="width:100%"></a>
-                <div class="text">Into the Labyrinth is a prototype 2D platformer that I created for my university work. A Daring fox must venture into the deadly Labyrinth to take down the Minotaur that killed his family in a 2-stage boss fight.</div>
-                <br>
-            </div>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides University fade">
+                    <div class="heading">Into The Labrynth</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #8E8E8E">
+                            <span>Unity</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #7209b7">
+                            <span>C#</span>
+                        </div>
+                    </div>	
+                    <div class="numbertext">5 / 6</div>
+                    <a href="./projects/intothelab/"><img class="image" src="assets/university/Lab1.png" style="width:100%"></a>
+                    <div class="text">Into the Labyrinth is a prototype 2D platformer that I created for my university work. A Daring fox must venture into the deadly Labyrinth to take down the Minotaur that killed his family in a 2-stage boss fight.</div>
+                    <br>
+                </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides University fade">
-                <div class="heading">Mario Bros. Using SDL2</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #00b4d8">
-                        <span>C++</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #2b2bcd">
-                        <span>SDL</span>
-                    </div>
-                </div>	
-                <div class="numbertext">6 / 6</div>
-                <a href="./projects/mario/"><img class="image" src="assets/university/Mario1.png" style="width:100%"></a>
-                <div class="text">This project was one of my first introductions to the C++ language. I had to create a lightweight game engine using C++ and SDL2 libraries, then recreate a simple version of the original Super Mario Bros within it.</div>
-                <br>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides University fade">
+                    <div class="heading">Mario Bros. Using SDL2</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #00b4d8">
+                            <span>C++</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #2b2bcd">
+                            <span>SDL</span>
+                        </div>
+                    </div>	
+                    <div class="numbertext">6 / 6</div>
+                    <a href="./projects/mario/"><img class="image" src="assets/university/Mario1.png" style="width:100%"></a>
+                    <div class="text">This project was one of my first introductions to the C++ language. I had to create a lightweight game engine using C++ and SDL2 libraries, then recreate a simple version of the original Super Mario Bros within it.</div>
+                    <br>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlidesUniversity(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesUniversity(1)">&#10095;</a>
             </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlidesUniversity(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlidesUniversity(1)">&#10095;</a>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot University" onclick="currentSlideUniversity(1)"></span>
+                <span class="dot University" onclick="currentSlideUniversity(2)"></span>
+                <span class="dot University" onclick="currentSlideUniversity(3)"></span>
+                <span class="dot University" onclick="currentSlideUniversity(4)"></span>
+                <span class="dot University" onclick="currentSlideUniversity(5)"></span>
+                <span class="dot University" onclick="currentSlideUniversity(6)"></span>
+            </div>
+            <br>
         </div>
-        <br>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot University" onclick="currentSlideUniversity(1)"></span>
-            <span class="dot University" onclick="currentSlideUniversity(2)"></span>
-            <span class="dot University" onclick="currentSlideUniversity(3)"></span>
-            <span class="dot University" onclick="currentSlideUniversity(4)"></span>
-			<span class="dot University" onclick="currentSlideUniversity(5)"></span>
-            <span class="dot University" onclick="currentSlideUniversity(6)"></span>
-        </div>
-        <br>
     </section>
 
     <section class="portfolio" id="workSection">
-        <br>
-        <div class="centerer"><h2>Industry Projects</h2></div>
-        <br>
-        <div class="centerer"><p>Here are some examples of Industry projects I have worked on during my time working at Bulldog Studios.</p></div>
-        <br>
-        <div class="slideshow-container">
+        <div class="container column center centraltext">
+            <br><br><br>
+            <h2>Industry Projects</h2>
+            <br>
+            <p>Here are some examples of Industry projects I have worked on during my time working at Bulldog Studios.</p>
+            <br>
+            <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides Corporate fade">
-                <div class="heading">Ecopolis</div>
-                <div class="work-item-tags-container">
-                    <div class="work-item-tag" style="background-color: #8E8E8E">
-                        <span>Unity</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #7209b7">
-                        <span>C#</span>
-                    </div>
-                    <div class="work-item-tag" style="background-color: #d97913">
-                        <span>Collaborative</span>
-                    </div>
-                </div>	
-                <div class="numbertext">1 / 1</div>
-                <a href="./projects/ecopolis/"><img class="image" src="assets/corporate/Ecopolis.PNG" style="width:100%"></a>
-                <div class="text">Ecopolis is a city builder I worked on when working for Bulldog Studios. It is a city builder made to encourage and promote green city planning to young students and teach them the consequences of pollution.</div>
-                <br>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides Corporate fade">
+                    <div class="heading">Ecopolis</div>
+                    <div class="work-item-tags-container">
+                        <div class="work-item-tag" style="background-color: #8E8E8E">
+                            <span>Unity</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #7209b7">
+                            <span>C#</span>
+                        </div>
+                        <div class="work-item-tag" style="background-color: #d97913">
+                            <span>Collaborative</span>
+                        </div>
+                    </div>	
+                    <div class="numbertext">1 / 1</div>
+                    <a href="./projects/ecopolis/"><img class="image" src="assets/corporate/Ecopolis.PNG" style="width:100%"></a>
+                    <div class="text">Ecopolis is a city builder I worked on when working for Bulldog Studios. It is a city builder made to encourage and promote green city planning to young students and teach them the consequences of pollution.</div>
+                    <br>
+                </div>
+            
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlidesCorporate(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesCorporate(1)">&#10095;</a>
             </div>
-		
-			
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlidesCorporate(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlidesCorporate(1)">&#10095;</a>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot Corporate" onclick="currentSlideCorporate(1)"></span>
+            </div>
+            <br>
         </div>
-        <br>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot Corporate" onclick="currentSlideCorporate(1)"></span>
-        </div>
-        <br>
     </section>
 
 
-    <section class="about" id="about">
-        <h2>A bit about me...</h2>
-        <br>
-        <p>Hi, I'm Thomas Stevens, a third-year Computer Games Design and Programming student at Staffordshire University. With A-levels in Computer Science, Maths, and Geography, I have a strong foundation in technical subjects.</p>
-        <br>
-        <p>Over the past three years, I've immersed myself in industry-standard languages like C# and C++, while gaining hands-on experience with the Unreal and Unity game engines. Although I appreciate the creative aspects of game design, my primary focus lies in programming and developing a successful career in this field.</p>
-        <br>
-        <p>My placement year at a games development studio was invaluable. I contributed to various projects, honed my programming skills, and even led a small team, effectively bridging communication between the team and management. This experience significantly enhanced both my technical abilities and interpersonal skills.</p>
-        <br>
-        <p>I'm eager to discuss potential projects or answer any questions you may have. Feel free to reach out - I'm always happy to help.</p>
-        
-        <br><br>
-        <div class="centerer buttonswapper"><a class="oop" href="mailto:thomasstevens2003@outlook.com">Contact me by Email</a><a class="oop" id="downloadButton" href="./assets/cv/thomasstevens_cv.pdf">Download my CV</a></div>
-
+    <section class="center" id="about">
+        <div class="container column center">
+            <h2>A bit about me...</h2>
+            <br>
+            <div class="container column left">
+                <p>Hi, I'm Thomas Stevens, a third-year Computer Games Design and Programming student at Staffordshire University. With A-levels in Computer Science, Maths, and Geography, I have a strong foundation in technical subjects.</p>
+                <br>
+                <p>Over the past three years, I've immersed myself in industry-standard languages like C# and C++, while gaining hands-on experience with the Unreal and Unity game engines. Although I appreciate the creative aspects of game design, my primary focus lies in programming and developing a successful career in this field.</p>
+                <br>
+                <p>My placement year at a games development studio was invaluable. I contributed to various projects, honed my programming skills, and even led a small team, effectively bridging communication between the team and management. This experience significantly enhanced both my technical abilities and interpersonal skills.</p>
+                <br>
+                <p>I'm eager to discuss potential projects or answer any questions you may have. Feel free to reach out - I'm always happy to help.</p>
+            </div>
+            <br><br>
+            <div class="centerer buttonswapper"><a class="oop" href="mailto:thomasstevens2003@outlook.com">Contact me by Email</a><a class="oop" id="downloadButton" href="./assets/cv/thomasstevens_cv.pdf">Download my CV</a></div>
+            </div>
     </section>
 
     <script src="slideshowcorporate.js"></script>
