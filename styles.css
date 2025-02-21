@@ -245,13 +245,18 @@ footer a, footer p {
 }
 
 @media (max-width: 1024px) {
+
+  :root{
+    --container-width: 95%;
+  }
+
   html {
     font-size: 14px;
   }
 
   .split_container {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
 
   header {
@@ -284,6 +289,11 @@ footer a, footer p {
 }
 
 @media (max-width: 640px) {
+
+  :root{
+    --container-width: 95%;
+  }
+
   html {
     font-size: 12px;
   }
@@ -313,3 +323,4 @@ footer a, footer p {
     flex-direction: column-reverse;
   }
 }
+
