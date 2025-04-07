@@ -46,6 +46,10 @@ body {
 .right { justify-content: flex-end; }
 .space_evenly { justify-content: space-evenly; }
 
+.fullwidthcontainer {
+  width: 100%;
+  display: flex;
+}
 .container {
   width: var(--container-width);
   display: flex;
