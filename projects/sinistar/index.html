@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thomas Stevens | Games Programmer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/tsfavicon.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../page.css">
+    <link rel="stylesheet" href="../../slideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <header>
+        <h1>SINISTAR REMAKE</h1>
+        <nav>
+            <a href="https://www.thomasstevens.xyz" href="#portfolio">Back to Homepage</a>
+        </nav>
+    </header>
+    <section>
+        <div class="columnsplitter">
+            <div class="projecttext">
+			
+				<h2>Project Description</h2>
+                <p>This project involved re-creating a classic 80s arcade game using modern coding and design practices to bring it up to date with modern standards.</p>
+				
+				<h2>Project Info</h2>
+				<p>Role: Programmer</p>
+				<p>Team Size: 1</p>
+				<p>Time Frame: 8 Weeks</p>
+				<p>Engine & Language: C++ with the SFML Libraries</p>
+
+
+                <h2>Project Introduction</h2>
+                <p>As part of my low level gameplay module, I was tasked to reverse engineer a classic 80s arcade game and update it's codebase using modern C++ practices. The arcade game I chose to re-make was Sinistar,
+                    a classic bullet hell space shooter developed by Williams Electronics in 1982. Over the course of the 8 week semester, I created base engine functionality to handle rendering as well as a state machine.
+                    Afterwards, I developed the core mechanics of the game and developed the AI of the game's enemies.
+                </p>
+				
+				<h2>Highlighted Mechanics</h2>
+                <h1>#1 Animation Component</h1>
+				<p>To animate the sprites, an animation Component was created, this could be attached to entities to allow animations to be played. The play animation function would be called in the entity's update function.
+                    To cycle through the animation, the sprite sheet is loaded into the component along with the rect size of each animation frame. Play would increment a timer and when it equals the animation timer variable,
+                    the next frame of the animation would be showed. This was done by changing the textureRect of the animation sprite sheet.
+                </p>
+				<div class="centerer"><a class="cta" href="https://github.com/T-Stevens1299/SinistarRemake/blob/main/animationComponent.h">View the code on GitHub</a></div>
+
+				<h1>#2 Sinistar</h1>
+                <p>The main game mechanic to re-create was the sinistar themselves. As with everything that required something to be rendered on screen, it is a child of the entity class, as rendering is handled there. A function was created
+                    to allow the boss to follow the player, this was done by normalising the vector of the difference between the player position and boss position. As for the collision, every time it collided with a sinibomb, the only thing that damage the boss,
+                    the animation component of the boss's outer body is called to run the step to next animation function. This makes it appear like a piece is destroyed every time a bomb hits the boss.
+                </p>
+                <div class="centerer"><a class="cta" href="https://github.com/T-Stevens1299/SinistarRemake/blob/main/boss.cpp">View the code on GitHub</a></div>
+                
+                <h2>Project Reflection</h2>
+                <p>Overall this project turned out very well, despite being the second time I have worked on creating a game outside an established games engine. I managed to re-create all core mechanics pretty faithully,
+                    however I can definetely improve on the backend code. This is because although game works smoothly, the processes on the backend are not optimised and can be improved in terms of memory effeciency. 
+                </p>
+                <br>
+            </div>
+
+            <div class="projectimages">
+                <br><br>
+                <ul>
+				<li><iframe class="video" width="620px" height="320px" style="padding: 10px;" frameBorder="0"
+					src="https://www.youtube.com/embed/NrGrq8LWvgw">
+				</iframe></li>
+                <li><img class="projectimage" src="../../assets/university/Mario2.png" alt="Project Image"></li>
+                <li><img class="projectimage" src="../../assets/university/Mario1.png" alt="Project Image"></li>
+                <li><img class="projectimage" src="../../assets/university/Mario3.png" alt="Project Image"></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://uk.linkedin.com/in/thomas-stevens-91a225254">© 2025 Thomas Stevens </a>
+        <a href="mailto:hartgrovedaniel3@outlook.com">📧 Website Constructed by Daniel Hartgrove</a>
+        <p>All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
