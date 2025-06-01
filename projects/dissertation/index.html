@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <h1>Dissertation Project</h1>
+        <h1>Naval Warfare - Dissertation Artifact</h1>
         <nav>
             <a href="https://www.thomasstevens.xyz" href="#portfolio">Back to Homepage</a>
         </nav>
@@ -23,32 +23,45 @@
         <div class="columnsplitter">
             <div class="projecttext">
 				
-				<h2>Project Description</h2>
-                <p>As part of my final year studies, I am currently writing a dissertation. This paper titled: AI in Real-time Strategy Games: A Study on the development processes behind them, aims to explore how the games industry and researchers alike, tackle the issue of creating challenging AI opponents in RTS games.</p>
+				<h2>Project Introduction</h2>
+                <p>As part of my final year, I was required to write a dissertation. The topic I chose to research was how to create more challenging AI opponents in RTS games. Being an avid RTS player myself, I am disappointed that the majority of playable titles resort to letting the AI cheat to be more "difficult" to play against </p>
+                <p>Therefore, researching methods to make AI opponents difficult without cheating was very interesting to me. Alongside my dissertation, I required an artifact to test my hypothesis. Rather than testing these methods on exisitng games like Starcraft, I decided to develop my own RTS game from scratch to help understand the full development pipeline of RTS games. </p>
 				
+				<div class="centerer"><a class="cta" href="../../assets/dissertation/dissertation.pdf">Read my Dissertation</a></div>
+
 				<h2>Project Info</h2>
-				<p>Role: Project developer and researcher</p>
-				<p>Team Size: 1</p>
-				<p>Time Frame: Ongoing development</p>
-				<p>Engine & Language: Unreal with C++</p>
+                <ul>
+                    <li>Role: Project developer and researcher</llii>
+                    <li>Team Size: 1</li>
+                    <li>Time Frame: 24 weeks</li>
+                    <li>Engine & Language: Unreal with C++</li>
+                </ul>
 
 
-                <h2>Abstract</h2>
-                <p>Realtime strategy (RTS) games are a sub-genre of strategy games which are characterised by the fact that all decisions and movements happen in real-time, unlike their turn-based counterparts. Calculating many decisions at runtime however can make it difficult to engineer challenging AI. Therefore, this paper investigated the different techniques and development processes used by the games industry and academia, to determine which ones are the most optimal for creating more challenging AI opponents within RTS games. These methods were tested in a brand new RTS framework developed in Unreal Engine 5, utilising C++ for greater performance. This framework included both the core mechanics of an RTS game, but also a basic AI structured according to practices researched in the literature of this field. The methods researched were then implemented into the decision-making process of this basic AI. These were then tested against human participants to see from both data collected on match statistics, as well as participant opinion, on whether or not the AI they played was challenging. This paper found that methods such as dynamic difficulty scaling and the Lanchester combat prediction algorithm were deemed more challenging by participants and supporting data, rather than methods like allowing the AI to cheat.</p>
-				<h2>Current Project Progress</h2>
-                <p>As of the end of December, the literature review and research methodology sections of the dissertation are completed. The core mechanics of the prototype are finished, the only development left to complete is developing the AI system itself.</p>
-            </div>
+                <h2>RTS Game Mechanics</h2>
+                <p>Rather than creating an RTS game following the Age of Empires or Starcraft structure of building everything from the ground up, I opted to mimic the Skirmish mode from Star Wars: Empire At War. This mode has short skirmish matches where players gain constant income and have to destroy their enemies shipyard to win.
+                    Player's could increase their income by capturing resource mines across the map which are a main point of conflict as whoeever has the strongest economy would likely win.
+                    Emulating this game-mode required a shipyard to build units from as well as the typical multi-select, drag select and unit grouping seen in most RTS titles.
+                </p>
+                <h2>AI Opponent Breakdown</h2>
+                <p>As for the AI opponent, having never developed AI before, this required extensive research on how RTS AI bots were typically structured. In the end I settled with breaking down each major task the bot needed to do and assignging it to an individual manager.
+                    These would all communicate for example the resource manager would order the combat manager to attack the player's resource mines if they had more than the AI.
+                </p>
+                <p>I also required a good combat prediction system so the AI did not just launch ships into battle aimlessly.
+                    I used an adapted version of Lanchester's law of modern warfare to account for ranged units. Now the AI could predict whether or not it could win the current engagement and retreat if it could not.</p>
+                <p>Lastly, I used dynamic difficulty scaling to adapt the AI's difficulty at runtime. An equation was used to see if the player was ahead or behind, depending on the value returned, the AI's income multiplier would be increased or decreased, which would buff or hinder the AI. As a result, modifying the difficulty.
+                    This was done so players had a constant challenge throughout the game depending on their skill level.
+                </p>
+                </div>
 
             <div class="projectimages">
                 <br><br>
                 <ul>
-                <li><img class="projectimage" src="../../assets/university/dissertation.png" alt="Project Image"></li>
                 <li><iframe class="video" width="620px" height="320px" style="padding: 10px;" frameBorder="0"
-					src="https://www.youtube.com/embed/_jmNUaSDjQM">
-				</iframe></li> 
-                <!-- <li><iframe class="video" width="620px" height="320px" style="padding: 10px;" frameBorder="0" -->
-					<!-- src="https://www.youtube.com/embed/yQMWXz8LJ98"> -->
-				<!-- </iframe></li> -->
+                    src="https://www.youtube.com/embed/TMFwhXoU8Ig">
+                </iframe></li> 
+                <li><img class="projectimage" src="../../assets/university/nw1.png" alt="Project Image"></li>
+                <li><img class="projectimage" src="../../assets/university/nw2.png" alt="Project Image"></li>
                 </ul>
                 
             </div>
