@@ -127,9 +127,8 @@ header nav a:hover {
 }
 
 .image_main {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  width: auto;
+  height: 100%;
   border-radius: 1rem;
   object-fit: cover;
 }
@@ -280,7 +279,7 @@ footer a, footer p {
   }
 
   .image_main {
-    max-width: 100%;
+    max-width: 80%;
   }
 
   #abouttext {
