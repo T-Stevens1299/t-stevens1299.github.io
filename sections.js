@@ -9,7 +9,7 @@ function showSection(sectionIndex) {
     sections[i].style.display = i === sectionIndex ? "flex" : "none";
 
     if (i === sectionIndex) {
-        sections[i].scrollIntoView({ behavior: 'instant' });
+        sections[i].scrollIntoView({ behavior: 'instant', block: 'center' });
       }
   }
   
@@ -27,5 +27,15 @@ window.onload = function() {
     sections[0].style.display = "flex";
     buttons[0].classList.add("activeTab");
   };
+
+  const nav = document.getElementById("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 150) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
   
 
